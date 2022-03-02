@@ -12,13 +12,13 @@
 
 <p>
   <strong>categorystrong>
-  <%= @restaurant.category %>
+  <%= @restaurant.category%>
 </p>
 
 <h2> All reviews </h2>
 <ul>
   <% @restaurant.reviews.each do |review| %>
-    <li><%= review.content %> <%= link_to "Delete", review_path(review), method: :delete, data: { confirm: "Are your Sure ?" }, class: "btn btn-red" %> </li>
+    <li><%= review.content %> <%= link_to "Delete", review_path(review), method: :delete, data: { confirm: "Are your Sure ?" }, class: "btn btn-danger" %> </li>
 
   <% end %>
 </ul>
